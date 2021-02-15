@@ -987,27 +987,6 @@ smile> rf.predict(x(0))
 res4: Int = 0
 ```
 
-Let\'s explore the data using Smile\'s visualization features, as shown
-in the following code:
-
-```
-smile> val iris = read.arff("data/weka/iris.arff", 4)
-iris: AttributeDataset = iris
-  class sepallength sepalwidth petallength petalwidth
-[1] Iris-setosa 5.1000 3.5000 1.4000 0.2000
-[2] Iris-setosa 4.9000 3.0000 1.4000 0.2000
-[3] Iris-setosa 4.7000 3.2000 1.3000 0.2000
-[4] Iris-setosa 4.6000 3.1000 1.5000 0.2000
-[5] Iris-setosa 5.0000 3.6000 1.4000 0.2000
-[6] Iris-setosa 5.4000 3.9000 1.7000 0.4000
-[7] Iris-setosa 4.6000 3.4000 1.4000 0.3000
-[8] Iris-setosa 5.0000 3.4000 1.5000 0.2000
-[9] Iris-setosa 4.4000 2.9000 1.4000 0.2000
-[10] Iris-setosa 4.9000 3.1000 1.5000 0.1000
-140 more rows...
-
-
-```
 
 
 

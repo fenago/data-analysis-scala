@@ -198,7 +198,7 @@ styles of programming using Scala.
 
 
 
-#### Compile and Run  using SBT
+#### Compile and Run using SBT
 
 To run scala file with main function defined from the terminal, simply run the following commands. The program will the then be compiled and executed.
 

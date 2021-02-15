@@ -1,4 +1,4 @@
-package handson.example.common
+package fenago.example.common
 
 /**
   * Person

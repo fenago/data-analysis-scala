@@ -1,4 +1,4 @@
-package handson.example
+package fenago.example
 
 import collection.mutable.{HashMap,TreeMap,LinkedHashMap}
 

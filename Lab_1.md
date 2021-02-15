@@ -32,7 +32,7 @@ You can access jupyter lab at `http://<lab-environment>/lab/workspaces/lab1_Scal
 **Note:**
 - The supplied commands in the next steps MUST be run from your `~/work/data-analysis-scala/Lab1` directory. 
 - Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
-- Click **File Browser** tab on the top left and open `~/work/data-analysis-scala/src\main\scala\handson\example` to view scala files.
+- Click **File Browser** tab on the top left and open `~/work/data-analysis-scala/Lab1/src/main/scala/fenago/example` to view scala files.
 
 ![](./images/scala.png)
 

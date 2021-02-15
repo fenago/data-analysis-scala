@@ -1,4 +1,4 @@
-package handson.example
+package fenago.example
 
 import org.apache.spark._
 import org.apache.spark.streaming._

@@ -1,4 +1,4 @@
-package handson.example.extract
+package fenago.example.extract
 
 import org.scalatest.{FlatSpec, Matchers}
 

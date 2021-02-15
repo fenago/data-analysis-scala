@@ -1,4 +1,4 @@
-package handson.example.csv
+package fenago.example.csv
 
 import java.io.{BufferedReader, InputStreamReader}
 import java.util.function.Consumer

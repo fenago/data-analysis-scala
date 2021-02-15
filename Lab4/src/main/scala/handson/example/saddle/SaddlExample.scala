@@ -1,4 +1,4 @@
-package handson.example.saddle
+package fenago.example.saddle
 
 import java.io.{BufferedReader, InputStreamReader}
 

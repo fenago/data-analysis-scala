@@ -1,4 +1,4 @@
-package handson.example.extract
+package fenago.example.extract
 
 import java.io.{BufferedReader, InputStreamReader}
 import java.util.function.Consumer

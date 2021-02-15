@@ -1,4 +1,4 @@
-package handson.example
+package fenago.example
 
 /**
   * Example to demonstrate running average

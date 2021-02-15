@@ -1,4 +1,4 @@
-package handson.example
+package fenago.example
 
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.stat.Statistics

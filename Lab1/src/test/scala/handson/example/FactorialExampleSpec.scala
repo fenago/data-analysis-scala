@@ -1,4 +1,4 @@
-package handson.example
+package fenago.example
 
 import org.scalatest._
 

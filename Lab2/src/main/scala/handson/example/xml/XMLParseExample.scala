@@ -1,6 +1,6 @@
-package handson.example.xml
+package fenago.example.xml
 
-import handson.example.common.Person
+import fenago.example.common.Person
 
 import scala.xml.{Elem, XML}
 

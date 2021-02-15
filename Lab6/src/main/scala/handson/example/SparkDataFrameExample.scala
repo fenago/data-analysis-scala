@@ -1,4 +1,4 @@
-package handson.example
+package fenago.example
 
 /**
   * Spark DataFrame Example

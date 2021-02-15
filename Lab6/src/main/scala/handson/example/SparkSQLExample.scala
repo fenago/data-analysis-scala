@@ -1,4 +1,4 @@
-package handson.example
+package fenago.example
 
 case class Person(fname: String, lname: String, age: Int)
 

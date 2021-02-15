@@ -1,4 +1,4 @@
-package handson.example
+package fenago.example
 
 /**
   * A very simple program that prints how many arguments were received and then prints each argument

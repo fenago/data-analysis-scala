@@ -1,6 +1,6 @@
-package handson.example.json
+package fenago.example.json
 
-import handson.example.common.Person
+import fenago.example.common.Person
 import org.json4s._
 import org.json4s.native.JsonMethods._
 

@@ -1,4 +1,4 @@
-package handson.example.ingest
+package fenago.example.ingest
 
 import org.json4s._
 import org.json4s.native.JsonMethods._

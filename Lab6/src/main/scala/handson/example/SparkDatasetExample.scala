@@ -1,4 +1,4 @@
-package handson.example
+package fenago.example
 
 case class PrimeNumber(num: Int, description: String)
 

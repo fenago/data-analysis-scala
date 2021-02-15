@@ -1,4 +1,4 @@
-package handson.example.common
+package fenago.example.common
 
 /**
   * Person case class that would be used as an example in this lab

@@ -1,6 +1,6 @@
-package handson.example
+package fenago.example
 
-import handson.example.common.Person
+import fenago.example.common.Person
 
 /**
   * Case class example

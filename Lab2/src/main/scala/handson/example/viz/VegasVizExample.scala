@@ -1,4 +1,4 @@
-package handson.example.viz
+package fenago.example.viz
 
 import vegas._
 

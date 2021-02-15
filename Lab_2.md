@@ -233,10 +233,7 @@ scala> val person = json.extract[Person] // convert to Person object
 person: Person = Person(123,John,Doe,21)
 ```
 
-As you can see in the preceding code, parsing JSON is fairly
-straightforward using this library. Another great feature of the library
-is that a parsed JSON object can be easily extracted into a Scala case
-class object.
+
 
 Creating JSON is equally straightforward, as shown in the following
 code:
@@ -255,18 +252,10 @@ scala> compact(render(json)) // create compact JSON string
 res0: String = {"id":"123","fname":"John","lname":"Doe","age":21}
 ```
 
-Spark has excellent built-in support for processing JSON data files. We
-will be covering this in upcoming labs on Spark and distributed
-processing. There are also several excellent Java libraries supporting
-JSON processing that can be easily integrated into Scala code.
 
 
 #### CSV
 
-
-We will be looking at how to handle CSV parsing using the Apache commons
-CSV Java library. This example will also demonstrate how easily Java
-libraries can be used with Scala code.
 
 First, let\'s set up our `build.sbt` with the appropriate
 dependency using the following code:
@@ -356,12 +345,6 @@ James,Bond,39
 
 scala> csvPrinter.flush()
 ```
-
-Spark has excellent built-in support for processing CSV data files. We
-will be covering this in upcoming labs on Spark and distributed
-processing.
-
-
 
 
 

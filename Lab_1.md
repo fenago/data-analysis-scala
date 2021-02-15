@@ -13,6 +13,28 @@ The following topics will be covered in this lab:
 - Overview of Scala libraries for data analysis
 
 
+#### Lab Environment
+All packages have been installed. There is no requirement for any setup.
+
+**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
+
+Lab instructions and scala examples are present in `~/work/data-analysis-scala` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
+There should be terminal(s) opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
+
+Now, move in the directory which contains the scala source code by running following command in the terminal.
+
+`cd ~/work/data-analysis-scala/Lab1`
+
+You can access jupyter lab at `http://<lab-environment>/lab/workspaces/lab1_Scala`
+
+
+**Note:**
+- The supplied commands in the next steps MUST be run from your `~/work/data-analysis-scala/Lab1` directory. 
+- Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
+- Click **File Browser** tab on the top left and open `~/work/data-analysis-scala/src\main\scala\handson\example` to view scala files.
+
+![](./images/scala.png)
 
 
 #### Java and SBT
@@ -229,11 +251,6 @@ scala> val theAuto = new Vehicle("WAUZZZ8K6AA123456", "Audi", "A4",
 theAuto: Vehicle = Vehicle@7c6c2822
 ```
 
-Following is the IntelliJ Scala worksheet:
-
-
-![](./images/50259238-77b4-4a6d-ba58-c6957caae926.png)
-
 
 
 Let\'s look at encapsulation and abstraction in Scala
@@ -361,22 +378,7 @@ inheritance relationship:
     [**Vehicle**] base-class
 - This relationship can be envisioned as a parent-child relationship
 
-The following is a screenshot of the same example in IDE:
 
-
-![](./images/5f3aa033-1735-41fa-889e-216f27ef6e6a.png)
-
-
-IDEs such IntelliJ help us to visualize many of the properties of
-classes and objects in a user-friendly way. A good IDE certainly acts as
-a great productivity tool. In the preceding example, the IDE screen is
-divided into the following three parts:
-
-
-- [**Structure**]: Structural properties of classes and
-    objects, such as methods and attributes
-- [**Source code**]: Source code in the context
-- [**Runtime**]: Output from the execution of the program
 
 
 
@@ -532,24 +534,6 @@ n * factorial(n-1)
 factorialAcc(acc * i, i -1) 
 ```
 
-
-The following is a screenshot of the preceding recursion examples in
-IntelliJ IDE. The IDE helps us clearly see which functions or methods
-are purely [**Recursive**] and which ones
-are [**T**][**ail Recursive**]:
-
-
-![](./images/672ddd00-92cc-40b7-bed9-32a59659e4ab.png)
-
-
-Please note the specific symbols next to `factorial` and
-`optimizedFactorial`. The two symbols are different, and if
-you hover over them, you can see the full description, listed as
-follows:
-
-
-- Method factorial is recursive
-- Method factorial is tail recursive
 
 
 Let\'s use the following code to see whether we are able to apply tail

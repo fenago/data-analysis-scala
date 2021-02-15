@@ -15,34 +15,35 @@ The following are the topics that we will be covering in this lab:
 - Creating a data pipeline
 
 
+#### Lab Environment
+All packages have been installed. There is no requirement for any setup.
 
-Data journey 
-------------------------------
+**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
 
-Next,we will look at an example of data analysis involving a life cycle task, focusing on the following broad categories:
+Lab instructions and scala examples are present in `~/work/data-analysis-scala` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
+There should be terminal(s) opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
+
+Now, move in the directory which contains the scala source code by running following command in the terminal.
+
+`cd ~/work/data-analysis-scala/Lab2`
+
+You can access jupyter lab at `http://<lab-environment>/lab/workspaces/lab2_Data_Analysis`
 
 
-- Sourcing data
-- Understanding data
-- Using ML to learn from data
-- Creating a data pipeline
+**Note:**
+- The supplied commands in the next steps MUST be run from your `~/work/data-analysis-scala/Lab2` directory. 
+- Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
+- Click **File Browser** tab on the top left and open `~/work/data-analysis-scala/src\main\scala\handson\example` to view scala files.
 
+![](./images/scala.png)
 
 
 
 
 ### Data formats
 
-
-
-By its very nature, there is a wide variety
-of raw data. There are a variety of systems generating raw data for a
-variety of purposes. The format of data also varies in each of these
-cases. To perform meaningful data analysis, we need to deal with these
-various formats and variables effectively. In this section, we will
-begin by looking at the three most prevalent data formats: XML, JSON,
-and CSV. 
-
+In this section, we will be looking at the three most prevalent data formats: XML, JSON,and CSV. 
 
 
 #### XML

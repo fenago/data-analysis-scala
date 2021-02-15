@@ -197,36 +197,29 @@ styles of programming using Scala.
 
 
 
+
+#### Compiling and Run using SBT
+
+Run following commands as shown in the screenshots below:
+
+```
+cd ~/work/data-analysis-scala/Lab1
+
+sbt "show discoveredMainClasses"
+
+sbt "runMain fenago.example.<update>"
+```
+
+![](./images/scala1.png)
+
+
+![](./images/scala2.png)
+
+
+
+
 ### Object-oriented programming using Scala
 
-
-
-In the object-oriented paradigm, you think in
-terms of objects and classes. A class can be
-thought of as a template that acts as a basis for creating objects of
-that type. For example, a `Vehicle` class can represent
-real-world automobiles with the following attributes:
-
-
-- `vin` (a unique vehicle identification number)
-- `manufacturer`
-- `model`
-- `modelYear`
-- `finalAssemblyCountry`
-
-
-A concrete instance of `Vehicle`, representing a real-world
-vehicle, could be:
-
-
-- `vin`: `WAUZZZ8K6AA123456`
-- `manufacturer`: `Audi`
-- `model`: `A4`
-- `modelYear`: `2009`
-- `finalAssemblyCountry`:[** **]`Germany`
-
-
-Let\'s put these attributes in action in Scala.
 
 Go to the Scala/SBT console and write the following lines of code:
 
@@ -253,10 +246,6 @@ theAuto: Vehicle = Vehicle@7c6c2822
 
 
 
-Let\'s look at encapsulation and abstraction in Scala
-[**Read-Evaluate-Print-Loop**] ([**REPL**]). We\'ll
-use Scala\'s `construct` class to define a template for a
-real-world`Vehicle`, as shown in the following code:
 
 
 1.  Let us define `Vehicle` class, this is an example of
@@ -304,12 +293,6 @@ scala> theAuto.stop()
 Stopping...
 ```
 
-To reiterate the main points aforementioned, the ability to define a
-class is an example of abstraction. Inside the class, we have an
-attribute called `createTs` (creation timestamp). The scope of
-this attribute is private and this attribute cannot be accessed from
-outside the class. The ability to hide internal details is an example of
-[**encapsulation**].
 
 Now let\'s look at inheritance and polymorphism in Scala REPL. We\'ll
 define a new class called `SportsUtilityVehicle` by extending
@@ -353,15 +336,6 @@ Enabling 4 wheel drive
 Starting SUV...
 ```
 
-Inheritance is a powerful construct that allows us to reuse code. We
-created an instance of`SportsUtilityVehicle`and assigned it to
-a type of vehicle. When we invoke the`start` method on this
-object, the runtime system automatically determines the actual type of
-object and calls the`start`method defined
-in`SportsUtilityVehicle`. This is an example of polymorphism,
-where we can treat objects as base types; however, at runtime, the
-appropriate behavior is applied depending upon thetrue type of the
-object.
 
 The following is a UML diagram with a more formal representation of the
 inheritance relationship:
@@ -384,11 +358,6 @@ inheritance relationship:
 
 ### Functional programming using Scala
 
-
-
-In the functional programming paradigm, functions become the primary tool for modeling solutions to a problem. In the
-simplest form, we can think of a function as
-something that accepts one or more input and produces an output. 
 
 To illustrate this concept, let\'s define a function in Scala that
 accepts two sets of integer input and returns the sum of two integers
@@ -447,12 +416,6 @@ res2: Int = 16
 
 As can be seen, after conversion, the signature changes
 to `(Int, Int) => Int`. 
-
-Anonymous functions and named methods are both useful in the context of
-Scala programming. In the previous section on Scala\'s object-oriented
-programming, we defined a `scala` class with some methods.
-These were all named methods, and would not be of much value from an
-object-oriented point of view if these were anonymous methods.
 
 
 Functions can be defined within a function. Let\'s look at the following
@@ -549,23 +512,9 @@ scala> @tailrec
 
 
 
-Scala case classes and the collection API 
------------------------------------------------------------
 
 
-
-Scala case classes and its collection API play a significant role in data 
-analysis using Scala. This section will give you insight into these
-topics and an understanding of their relevance in the context of data
-analysis.
-
-During the data analysis process, we will frequently encounter data that
-consists of a collection of records. These records often need to
-be transformed, cleaned, or filtered.
-
-
-
-### Scala case classes
+#### Scala case classes
 
 
 
@@ -581,15 +530,6 @@ scala> val jon = Person("Jon", "Doe", 21)
 jon: Person = Person(Jon,Doe,21)
 ```
 
-In the preceding example, we have defined a Scala case class
-called `Person` with three attributes, namely
-`fname`, `lname`, and `age`. We created an
-instance, `jon`, of the `Person` class without using
-the new keyword. Also, note that the `jon` object\'s
-attributes are printed out in a easy-to-use form. There are several such
-convenient features associated with Scala case classes that are
-extremely beneficial for programmers in general, particularly someone
-who deals with data.
 
 Let\'s look at another convenient feature of Scala case classes, namely
 the `copy `object. We\'ll copy a Scala `case` class
@@ -607,9 +547,6 @@ scala> val jonNew = jon.copy(fname="John")
 jonNew: Person = Person(John,Doe,21)
 ```
 
-This feature comes in really handy during data processing when we work
-with a template representation and generate specific instances from a
-template by updating a subset of attributes.
 
 Another great feature of case classes is pattern matching, which helps
 in writing flexible code that is easier to work with. Let\'s look at an
@@ -660,25 +597,6 @@ to explore this example, as shown in the following screenshot:
 ![](./images/40b02cdc-7e66-4e22-83a0-bdd6864a5d75.png)
 
 
-Let\'s look at the preceding example in a bit more detail, looking at
-the following lines:
-
-
-- [**Line \#4**]: `case Person("Jon",  _,  _)`means
-    any person whose first name is `Jon`
-- [**Line \#7**]: `case Person(n, _, _)` means any
-    person with the first name is extracted into variable `n`
-- [**Line \#10**]: `case _` means anything that
-    does not match line \#4 and line \#7
-
-
-With classic pattern matching, it is generally necessary for you to
-write a significant amount of boilerplate code with
-`if-then-else` types of constructs. Scala and its case classes
-provide a concise and expressive way to solve this problem.
-
-
-
 
 #### Array
 
@@ -719,18 +637,6 @@ performance characteristics:
 
 ![](./images1.PNG)
  
-
-As can be seen in the preceding table, the `apply` operation
-for getting the element at a specified index is a fast constant-time
-operation for an array. Along similar lines, the `update`
-operation for replacing an element at the specified index is also a fast
-constant-time operation. On the other hand, the `tail`
-operation for getting elements other than the `head` is a slow
-linear time operation. In fact, the `prepend`,
-`append`, and `insert` operations are not even
-supported for an array. This might seem a limiting factor at first, but
-Scala has an `ArrayBuffer` class for building an array, and
-that should be used if such operations are necessary.
 
 In data analysis, we typically create a dataset initially and use it
 over and over again during different phases of the analysis. This
@@ -810,33 +716,7 @@ performance characteristics:
 
 ![](./images2.PNG)
 
-As can be seen in the preceding table, the List enables very fast
-`head`, `tail`, and `prepend`
-operations. For the array type described earlier, we saw that
-`tail` was an expensive linear time operation. The
-`apply` operation for getting an element at the specified
-index is a linear time operation. This is because the desired element
-can only be located by traversing the links, starting from the
-`head`. This explains why an update is a slow operation for
-the List.
 
-In a real-world scenario, constant time performance is the desired
-behavior and we want to avoid linear time performance, particularly for
-large datasets. Performance is an important factor in determining the
-most suitable data structure for the problem being solved. If constant
-time performance is not practical, we generally look for data structures
-and algorithms that provide [*Log Time performance O(log
-n)*]{.emphasis}: time proportional to the logarithm of the collection
-size. Note that there are many algorithms, such as sorting, with best
-performance times of [*O(n log n)*]{.emphasis}. When dealing with large
-datasets, a good understanding of the performance characteristics of the
-data structures and algorithms that are used goes a long way in solving
-problems effectively and efficiently.
-
-Similar considerations hold true for memory usage, even though larger
-amounts of RAM are now becoming available at a cheaper price. This is
-because the growth in the size of data being produced is much higher
-than the drop in prices of RAM.
 
 Let\'s now look at `ListBuffer`, which can be used for
 constructing a list more efficiently. This will be very useful, given
@@ -868,38 +748,6 @@ scala> val personsUpdated = personsBuf.toList // materialize into a List of Pers
 personsUpdated: List[Person] = List(Person(Alice,Smith,20), Person(Jon,Doe,21))
 ```
 
-If we compare `ArrayBuffer` and `ListBuffer`, we can
-see that they both offer similar APIs. Their primary use is for
-constructing an array and list respectively, providing good performance
-characteristics.
-
-The decision of choosing between array and list is dependent on how the
-dataset will be used. The following are some useful tips:
-
-
-- An array should generally be the first choice because of its storage
-    efficiency. Array operations are somewhat limited compared to list
-    operations, and the usage pattern becomes the determining factor.
-- If a `tail` operation is necessary, a list is the obvious
-    choice. In fact, there are many recursive algorithms that make
-    extensive use of this feature. Using an array instead of a list will
-    result in a significant performance penalty.
-- If `apply` or `update` operations are desired,
-    then an array is certainly a better choice.
-- If the `prepend` operation is needed or if a limited use
-    of `append` is required, then a list is the only choice
-    because an array does not support the `prepend` or
-    `append` operations.
-
-
-As you can see, there are many factors at play when it comes to
-selecting the appropriate data structure. This is often the case in any
-software design decision where there are conflicting needs and you need
-to decide how to make trade-offs. For example, you might decide in favor
-of using a list even though none of the non-array features of a list are
-required based on current usage patterns. This could be because of the
-list\'s fast `tail` operation, which could be beneficial for
-the recursive algorithms in future usage patterns.
 
 Recursive algorithms play a central role in functional programming. In
 fact, Scala supports tail-recursion optimization out of the box, which
@@ -958,23 +806,7 @@ youngestEmpty: Option[Person] = None
 
 The preceding code is a very simple example of finding a
 `Person` with the minimum age from a list of
-`Person` objects. This simple example, however, illustrates
-the following important and powerful points regarding Scala:
-
-
-- It is fairly straightforward to write a tail-recursive algorithm
-    using a list in Scala that accumulates information. This algorithm
-    can traverse the entire list without incurring the overhead of stack
-    growth in a classic recursion.
-- Scala\'s `option` construct provides a convenient way of
-    representing the presence or absence of an object.
-- List\'s `head` and `tail` operations come in
-    handy in writing such recursive algorithms, and provide the desired
-    constant time performance for both these operations.
-- The code is concise and works even on the empty list.
-- Using the accumulator is a commonly used pattern in turning a
-    classic recursion algorithm into a tail-recursion algorithm. 
-
+`Person` objects.
 
 
 #### Map
@@ -1104,70 +936,11 @@ res17: numLinkedHMap.type = Map(1 -> one, 2 -> two, 3 -> three, 4 -> four, 5 -> 
 ```
 
 Scala offers a good number of choices in terms of Map implementation.
-You can choose the best option based on the usage pattern. Similar to
-the design choices between arrays and lists, at times there are
-trade-offs that need to be considered in deciding the best Map
-implementation.
-
-
-
-Overview of Scala libraries for data analysis 
----------------------------------------------------------------
-
-
-
-There are a great number of Scala libraries and
-frameworks that simplify data analysis tasks.
-There is a lot of innovation happening regarding the simplification of
-data analysis-related tasks, from simple tasks such as data cleaning, to
-more advanced tasks such as deep learning. The following sections focus
-on the most popular data-centric libraries and frameworks that have
-seamless Scala integration.
-
-
-
-### Apache Spark
-
-
-
-Apache Spark (<https://spark.apache.org/>) is a unified analytics
-engine for large-scale data processing. Spark
-provides APIs for batch as well as stream
-data processing in a distributed computing
-environment. Spark\'s API can be broadly divided into the following five
-categories:
-
-
-- [**Core**]: RDD
-- [**SQL structured**]: DataFrames and Datasets
-- [**Streaming**]: Structured streaming and DStreams
-- [**MLlib**]: Machine learning
-- [**GraphX**]: Graph processing
-
-Apache Spark is a very active open source project. New features are
-added and performance improvements made on a regular basis. Typically,
-there is a new minor release of Apache Spark every three months with
-significant performance and feature improvements. At the time of
-writing, 2.4.0 is the most recent version of Spark.
-
-The following is Spark core\'s SBT dependency:
-
-```
-scalaVersion := "2.11.12"
-
-libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.1"
-```
-
-Spark version 2.4.0 has introduced support for Scala version 2.12;
-however, we will be using Scala version 2.11 for exploring Spark\'s
-feature sets. Spark will be covered in more detail in the subsequent
-labs.
-
+You can choose the best option based on the usage pattern.
 
 
 Summary 
 -------------------------
-
 
 
 This lab provided a high-level overview of the Scala programming

@@ -155,12 +155,6 @@ scala> toXml(person)
 res0: scala.xml.Elem = <person id="123"><fname>John</fname><lname>Doe</lname><age>21</age></person>
 ```
 
-Spark has excellent support for processing XML data files using the
-`spark-xml` library
-(<https://github.com/databricks/spark-xml>). We will be covering this in
-upcoming labs on Spark and distributed processing. In addition,
-Java\'s native and add-on libraries have excellent support for XML
-processing, which can also be used with Scala code seamlessly. 
 
 
 #### JSON
@@ -347,45 +341,10 @@ processing.
 
 
 
-Understanding data 
-------------------------------------
-
-
-
-Data generally tells a story. However, this is not
-obvious just from looking at the data. To
-understand data, we need to be able to ask certain questions and get
-answers from the data. Asking the right questions in itself requires a
-great deal of domain knowledge and experience. Once the questions are
-framed, getting the answers from the data is the next crucial task. Data
-exploration is an iterative journey because getting answers to questions
-generally leads to more questions, and then one has to answer these new
-questions using data.
-
-We will look at the following two important techniques for understanding
-and exploring data:
-
-
-- [**Statistical methods**]: Looking at the properties of
-    data at an aggregate level
-- [**Visual methods**]: Looking at the properties of data
-    using visual methods
-
-
-In fact, in many real scenarios, both of these methods are used in
-conjunction with each other to explore data in an effective manner.
-
 
 
 ### Using statistical methods for data exploration
 
-
-
-In this section, we will explore data by looking at some aggregate-level information about the dataset. In a large
-enough dataset, looking at every individual record and trying to get
-insight could be a fairly time-consuming process. Statistical methods
-can help to speed up this process because we can leverage machines for
-fast and efficient computation aggregates.
 
 We will first use pure Scala code to explore and get an insight into the
 data. Next, we will look at some Scala libraries that simplify this task
@@ -842,111 +801,6 @@ offer in terms of conveniently exploring and
 working with data.
 
 
-### Note 
-
-Please note that while Saddle works well in a single [**Java Virtual
-Machine**] ([**JVM**]), it is not designed for data
-processing in a distributed environment.
-
-
-Spark is better for working with data in a distributed environment and
-for processing data at a large scale. We will look at Spark in
-subsequent labs.
-
-
-
-### Using data visualization for data exploration
-
-
-
-Using the data visualization methodology, we can get an
-insight into the data by looking at the
-visual representation of the data. We will be looking at a fairly
-popular Scala library to do some simple exploration in Scala.
-
- 
-
-
-
-#### Using the vegas-viz library for data visualization
-
-
-
-We will explore some sample dates using the
-`vegas-viz` (<https://www.vegas-viz.org/>) Scala library for
-data visualization. This is a powerful Scala library that integrates very well with Spark. We will work with
-Spark in subsequent labs.
-
-To explore this library in `sbt`, we will first set up the
-`build.sbt` file using the following code. At the time of
-writing, `vegas-viz` and Spark are only supported for Scala
-2.11.x, so we will use Scala version 2.11.12 for our exploration:
-
-```
-// We will use Scala 2.11.x because many of Scala libraries such as
-// Spark, vegas-viz are not yet supported for Scala 2.12.x
-scalaVersion := "2.11.12"
-
-libraryDependencies ++= Seq(
-  "org.vegas-viz" %% "vegas" % "0.3.11" // Vegas Visualization Library
-)
-```
-
-After creating the aforementioned `build.sbt`, run SBT. Once
-inside SBT, run the following console command to start Scala REPL:
-
-```
-scala> val plot = Vegas("Currency Exchange Rates").
-     | withData(
-     | Seq(
-     | Map("Currency Code" -> "USD", "Exchange Rate" -> 1.00),
-     | Map("Currency Code" -> "EUR", "Exchange Rate" -> 0.86),
-     | Map("Currency Code" -> "GBP", "Exchange Rate" -> 0.76),
-     | Map("Currency Code" -> "CHF", "Exchange Rate" -> 0.99),
-     | Map("Currency Code" -> "CAD", "Exchange Rate" -> 1.29),
-     | Map("Currency Code" -> "AUD", "Exchange Rate" -> 1.41),
-     | Map("Currency Code" -> "HKD", "Exchange Rate" -> 7.83)
-     | )
-     | ).
-     | encodeX("Currency Code", Nom).
-     | encodeY("Exchange Rate", Quant).
-     | mark(Point)
-```
-
-Done. Now, let\'s plot the following:
-
-```
-plot: vegas.DSL.ExtendedUnitSpecBuilder = ExtendedUnitSpecBuilder(ExtendedUnitSpec(None,None,Point,Some(Encoding(None,None,Some(PositionChannelDef(None,None,None,Some(Currency Code),Some(Nominal),None,None,None,None,None)),Some(PositionChannelDef(None,None,None,Some(Exchange Rate),Some(Quantitative),None,None,None,None,None)),None,None,None,None,None,None,None,None,None,None,None)),None,Some(Currency Exchange Rates),Some(Data(None,None,Some(List(Values(Map(Currency Code -> USD, Exchange Rate -> 1.0)), Values(Map(Currency Code -> EUR, Exchange Rate -> 0.86)), Values(Map(Currency Code -> GBP, Exchange Rate -> 0.76)), Values(Map(Currency Code -> CHF, Exchange Rate -> 0.99)), Values(Map(Currency Code -> CAD, Exchange Rate -> 1.29)), Values(Map(Currency Code -> AUD, Exchange Rate -> 1.41)), ...
-scala> plot.show
-```
-
-This will produce the following scatter plot of **`Currency Code`**
-versus **`Exchange Rate`** (USD):
-
-
-![](./images/192b2453-17b8-4cb6-a4c0-c1b262f31e28.png)
-
-
-Change the plot mark to `Bar` to output the bar chart using
-the following code:
-
-```
-val plot = Vegas("Currency Exchange Rates").
-...
-  mark(Bar) // for bar chart
-```
-
-This produces the following bar chart:
-
-
-![](./images/037659c2-0f65-4968-a592-560754b4cbb1.png)
-
-
-As we can see, by using the `vegas-viz` Scala library, we can
-easily perform data visualization using a simple set of APIs.
-
-
-
 
 
 ### Setting up Smile
@@ -1130,21 +984,8 @@ iris: AttributeDataset = iris
 [10] Iris-setosa 4.9000 3.1000 1.5000 0.1000
 140 more rows...
 
-smile> plot(iris, '*', Array(Color.RED, Color.BLUE, Color.CYAN)) // plot all the attribute pairs
-res1: javax.swing.JFrame = javax.swing.JFrame[frame0,780,191,1000x1000,invalid,layout=java.awt.BorderLayout,title=iris,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,22,1000x978,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+
 ```
-
-We will then see the following output window:
-
-
-![](./images/de570ebb-d6a2-4300-8dae-82d31c15ec50.png)
-
-
-As we can see, the Smile Scala library has a lot to offer in terms of ML
-data visualization. This could be a tool of choice if the data volumes
-are not very large. As mentioned earlier, Spark and Vegas would be
-better for processing and visualizing large datasets.
-
 
 
 

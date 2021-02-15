@@ -582,20 +582,6 @@ I am not Jon but I am something other than Person
 res16: Boolean = false
 ```
 
-We can explore the same example in the IDE, as shown in the
-following screenshot:
-
-
-![](./images/0bb78541-dbb7-4d3f-a531-08f37a5dca5c.png)
-
-
-Using the IDE, we can clearly see the properties of the `case`
-class. Another great option is to use the Scala worksheet feature in IDE
-to explore this example, as shown in the following screenshot:
-
-
-![](./images/40b02cdc-7e66-4e22-83a0-bdd6864a5d75.png)
-
 
 
 #### Array
@@ -635,15 +621,10 @@ updatePersons: Array[Person] = Array(Person(Jon,Doe,20), Person(Alice,Smith,20),
 The following is a summary of the array operations and their associated
 performance characteristics:
 
-![](./images1.PNG)
+![](./images/1.PNG)
  
 
-In data analysis, we typically create a dataset initially and use it
-over and over again during different phases of the analysis. This
-implies that the dataset construction is generally a one-time step, and
-the construction is then used multiple times. This is precisely why a
-builder such as `ArrayBuffer` is separated from the array:
-because each serves a different purpose. The `ArrayBuffer` is
+The `ArrayBuffer` is
 designed to help in the construction of the array with support for the
 commonly desired build operations. Let\'s look at
 the `ArrayBuffer` functionality using Scala REPL, as shown in
@@ -710,11 +691,6 @@ above25: List[Person] = List(Person(Bob,Crew,27))
 scala> val updatePersons = persons.updated(0, Person("Jon", "Doe", 20)) // update first element
 updatePersons: List[Person] = List(Person(Jon,Doe,20), Person(Alice,Smith,20), Person(Bob,Crew,27))
 ```
-
-The following is a summary of the List operations and their associated
-performance characteristics:
-
-![](./images2.PNG)
 
 
 
@@ -837,20 +813,8 @@ res6: String = USD
 In Scala, there are many different types of map, each with its own set
 of characteristics. We will cover the following three:
 
-![](./images3.PNG)
+![](./images/3.PNG)
  
-
-The following are some general considerations to bear in mind
-regarding the performance of each of these `Map` types:
-
-
-- `HashMap` is the best choice in most cases, particularly
-    for lookup-centric use cases. `HashMap` does not preserve
-    key insertion order or sort keys.
-- `TreeMap` is suitable for use cases where keys need to be
-    sorted.
-- `LinkedHashMap` is most suited when the key insertion
-    order needs to be preserved.
 
 
 Let\'s explore some of these map types in Scala REPL using the following

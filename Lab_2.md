@@ -50,7 +50,7 @@ To run scala file with main function defined from the terminal, simply run the f
 ```
 cd ~/work/data-analysis-scala/Lab2
 
-rm -rf ~/work/data-analysis-scala/Lab2/src/main/scala/fenago/example/.ipynb_checkpoints/
+rm -rf ~/work/data-analysis-scala/Lab2/src/main/scala/fenago/example/**/.ipynb_checkpoints/
 
 sbt "show discoveredMainClasses"
 
@@ -831,8 +831,7 @@ working with data.
 
 There are multiple ways to set up Smile on
 your machine. Refer to Smile Quick Start
-at <https://haifengl.github.io/smile/quickstart.html> for more
-information. The easiest and fastest way to get started is to download
+at <https://haifengl.github.io> . The easiest and fastest way to get started is to download
 the binaries from <https://github.com/haifengl/smile/releases>.
 
 The following is a set of commands that are used to perform the Smile

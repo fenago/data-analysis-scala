@@ -1,6 +1,6 @@
 <img align="right" src="./logo.png">
 
-<h2><span style="color:red;"></span>Data Analysis with Scala</h2>
+<h2><span style="color:red;">Data Analysis with Scala</span></h2>
 
 
 Scala's advanced techniques to solve real-world problems in data analysis and gain valuable insights from your data
@@ -17,6 +17,8 @@ Scala's advanced techniques to solve real-world problems in data analysis and ga
 #### Labs
 
 Labs for this course are available at path shared below.
+
+Path: `~/work/data-analysis-scala`
 
 1. ##### Scala Overview
 		* http://<lab-environment>/lab/workspaces/lab1_Scala

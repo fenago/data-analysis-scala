@@ -3,10 +3,10 @@
 
 **Perform data collection, processing, manipulation, and visualization with Scala**
 
-## What is this book about?
-Efficient business decisions with an accurate sense of business data helps in delivering better performance across products and services. This book helps you to leverage the popular Scala libraries and tools for performing core data analysis tasks with ease.
+## What is this course about?
+Efficient business decisions with an accurate sense of business data helps in delivering better performance across products and services. This course helps you to leverage the popular Scala libraries and tools for performing core data analysis tasks with ease.
 
-This book covers the following exciting features:
+This course covers the following exciting features:
 * Techniques to determine the validity and confidence level of data
 * Apply quartiles and n-tiles to datasets to see how data is distributed into many buckets
 * Create data pipelines that combine multiple data lifecycle steps
@@ -25,6 +25,6 @@ scala> factorial(5)
 res0: Long = 120
 ```
 
-**Following is what you need for this book:**
-If you are a data scientist or a data analyst who wants to learn how to perform data analysis using Scala, this book is for you. All you need is knowledge of the basic fundamentals of Scala programming.
+**Following is what you need for this course:**
+If you are a data scientist or a data analyst who wants to learn how to perform data analysis using Scala, this course is for you. All you need is knowledge of the basic fundamentals of Scala programming.
 

@@ -1,10 +1,10 @@
 
 
-Chapter 1. Scala Overview
+Lab 1. Scala Overview
 ----------------------------------
 
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 
 - Installing and getting started with Scala
@@ -587,7 +587,7 @@ be transformed, cleaned, or filtered.
 
 Scala case classes provide a convenient mechanism to work with objects that hold values. Let\'s look at an example in
 Scala REPL. The `case` class defined in the following code
-will be used in other example codes in this chapter:
+will be used in other example codes in this lab:
 
 ```
 scala> case class Person(fname: String, lname: String, age: Int)
@@ -693,28 +693,6 @@ write a significant amount of boilerplate code with
 `if-then-else` types of constructs. Scala and its case classes
 provide a concise and expressive way to solve this problem.
 
-
-### Scala collection API
-
-
-
-Scala has a comprehensive API for working conveniently
-with collections. A good understanding of
-some of the APIs is essential for making effective use of Scala in data
-analysis.
-
-Although a full review of the Scala collection API is not part of the
-scope of this book, three key data structures will be covered in this
-section: the array, list, and map. The emphasis here is on their direct
-relevance to data analysis. For complete details, please refer to the
-official Scala resource
-at <https://www.scala-lang.org/api/current/scala/collection/index.html>.
-
-It is also important to consider the performance characteristics of a
-Scala collection API and use this information in making appropriate data
-structure selections for the problem being solved. Refer
-to [https://docs.scala-lang.org/overviews/collections/performance-characteristics.html ](https://docs.scala-lang.org/overviews/collections/performance-characteristics.html){.ulink}for
-more information.
 
 
 
@@ -1199,7 +1177,7 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.1"
 Spark version 2.4.0 has introduced support for Scala version 2.12;
 however, we will be using Scala version 2.11 for exploring Spark\'s
 feature sets. Spark will be covered in more detail in the subsequent
-chapters.
+labs.
 
 
 
@@ -1208,17 +1186,17 @@ Summary
 
 
 
-This chapter provided a high-level overview of the Scala programming
+This lab provided a high-level overview of the Scala programming
 language. We looked at some of the object-oriented and functional
-programming aspects of Scala using applied examples. This chapter
+programming aspects of Scala using applied examples. This lab
 touched upon the array, list, and map functionalities of the Scala
 collection API. These data structures have numerous uses in the data
-analysis life cycle. The chapter also provided the necessary information
+analysis life cycle. The lab also provided the necessary information
 to set up and install the Scala tools that are essential for
-understanding and applying the topics covered in subsequent chapters.
+understanding and applying the topics covered in subsequent labs.
 Finally, a quick overview of the data-centric Scala libraries was
 provided. We will be making use of these libraries in the next few
-chapters to solve specific data life cycle problems.
+labs to solve specific data life cycle problems.
 
-In the next chapter, we will look at the data analysis life cycle and
+In the next lab, we will look at the data analysis life cycle and
 associated tasks.

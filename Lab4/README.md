@@ -1,4 +1,4 @@
-Chapter 4: Data Exploration and Visualization
+Lab 4: Data Exploration and Visualization
 =============================================
 To build and run unit tests using SBT:
 

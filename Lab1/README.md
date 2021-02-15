@@ -1,4 +1,4 @@
-Chapter 1: Scala Overview
+Lab 1: Scala Overview
 =========================
 To build and run unit tests using SBT:
 

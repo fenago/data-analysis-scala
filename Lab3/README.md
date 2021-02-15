@@ -1,4 +1,4 @@
-Chapter 3: Data Ingestion
+Lab 3: Data Ingestion
 =========================
 To build and run unit tests using SBT:
 

@@ -1,11 +1,11 @@
 
 
-Chapter 2. Data Analysis Life Cycle
+Lab 2. Data Analysis Life Cycle
 --------------------------------------------
 
 
 
-The following are the topics that we will be covering in this chapter:
+The following are the topics that we will be covering in this lab:
 
 
 - Data journey
@@ -157,7 +157,7 @@ res0: scala.xml.Elem = <person id="123"><fname>John</fname><lname>Doe</lname><ag
 Spark has excellent support for processing XML data files using the
 `spark-xml` library
 (<https://github.com/databricks/spark-xml>). We will be covering this in
-upcoming chapters on Spark and distributed processing. In addition,
+upcoming labs on Spark and distributed processing. In addition,
 Java\'s native and add-on libraries have excellent support for XML
 processing, which can also be used with Scala code seamlessly. 
 
@@ -239,7 +239,7 @@ res0: String = {"id":"123","fname":"John","lname":"Doe","age":21}
 ```
 
 Spark has excellent built-in support for processing JSON data files. We
-will be covering this in upcoming chapters on Spark and distributed
+will be covering this in upcoming labs on Spark and distributed
 processing. There are also several excellent Java libraries supporting
 JSON processing that can be easily integrated into Scala code.
 
@@ -341,7 +341,7 @@ scala> csvPrinter.flush()
 ```
 
 Spark has excellent built-in support for processing CSV data files. We
-will be covering this in upcoming chapters on Spark and distributed
+will be covering this in upcoming labs on Spark and distributed
 processing.
 
 
@@ -586,7 +586,7 @@ methods.
 
 Spark is a very popular distributed data-processing engine. It has
 built-in support for exploring data in many different formats. We will
-look at Spark functionality in subsequent chapters. Let\'s look at
+look at Spark functionality in subsequent labs. Let\'s look at
 another Scala library called
 [**Saddle**] (<http://saddle.github.io/>) and see how we can
 leverage this library to work with data.
@@ -850,7 +850,7 @@ processing in a distributed environment.
 
 Spark is better for working with data in a distributed environment and
 for processing data at a large scale. We will look at Spark in
-subsequent chapters.
+subsequent labs.
 
 
 
@@ -874,7 +874,7 @@ popular Scala library to do some simple exploration in Scala.
 We will explore some sample dates using the
 `vegas-viz` (<https://www.vegas-viz.org/>) Scala library for
 data visualization. This is a powerful Scala library that integrates very well with Spark. We will work with
-Spark in subsequent chapters.
+Spark in subsequent labs.
 
 To explore this library in `sbt`, we will first set up the
 `build.sbt` file using the following code. At the time of
@@ -1152,9 +1152,9 @@ Summary
 
 
 
-In this chapter, we looked at the journey of data and the data analysis
+In this lab, we looked at the journey of data and the data analysis
 life cycle at a broad level. Using hands-on examples, we looked at how
 to perform some of the tasks using mainly Scala and some Java libraries.
 
-In the next chapter, we will look at data ingestion and associated
+In the next lab, we will look at data ingestion and associated
 tasks.

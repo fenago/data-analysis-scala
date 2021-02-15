@@ -198,12 +198,15 @@ styles of programming using Scala.
 
 
 
-#### Compiling and Run using SBT
+#### Compile and Run  using SBT
 
-Run following commands as shown in the screenshots below:
+To run scala file with main function defined from the terminal, simply run the following commands. The program will the then be compiled and executed.
+
 
 ```
 cd ~/work/data-analysis-scala/Lab1
+
+rm -rf ~/work/data-analysis-scala/Lab1/src/main/scala/fenago/example/.ipynb_checkpoints/
 
 sbt "show discoveredMainClasses"
 
@@ -215,6 +218,8 @@ sbt "runMain fenago.example.<update>"
 
 ![](./images/scala2.png)
 
+
+**Note:** Run `sbt run` instead of sbt "runMain fenago.example.`<update>`" command to choose which file to run.
 
 
 

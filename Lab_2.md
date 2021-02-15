@@ -41,6 +41,28 @@ You can access jupyter lab at `http://<lab-environment>/lab/workspaces/lab2_Data
 
 
 
+
+#### Compile and Run using SBT
+
+To run scala file with main function defined from the terminal, simply run the following commands. The program will the then be compiled and executed.
+
+
+```
+cd ~/work/data-analysis-scala/Lab2
+
+rm -rf ~/work/data-analysis-scala/Lab2/src/main/scala/fenago/example/.ipynb_checkpoints/
+
+sbt "show discoveredMainClasses"
+
+sbt "runMain fenago.example.<update>"
+```
+
+![](./images/scala3.png)
+
+
+**Note:** Run `sbt run` instead of sbt "runMain fenago.example.`<update>`" command to choose which file to run.
+
+
 ### Data formats
 
 In this section, we will be looking at the three most prevalent data formats: XML, JSON,and CSV. 

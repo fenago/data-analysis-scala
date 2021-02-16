@@ -690,47 +690,8 @@ provides both variants of the statistical function, one
 without weights and the other one with weights:
 
 
-![](images/5.PNG)
+![](./images/5.PNG)
 
-The metrics method is more generalized and accepts one or more of the
-following arguments as a string (case-sensitive):
-
-
--   `count`: The count of all vectors seen
--   `max`: The maximum for each coefficient
--   `mean`: A vector that contains the coefficient-wise mean
--   `min`: The minimum for each coefficient
--   `normL1`: The L1 norm of each coefficient (sum of the
-    absolute values)
--   `normL2`: L2, aka the Euclidean norm, for each coefficient
--   `numNonzeros`: A vector with the number of non-zeros for
-    each coefficient
--   `variance`: A vector that contains the coefficient-wise
-    variance
-
-
-`Summarizer` tools offer a choice between metrics and
-individual methods. Either can be used based on personal preference.
-
-
-
-Random data generation
-----------------------------------------
-
-
-Random data generation is useful for several
-purposes and plays a significant role in performance testing. This
-technique is also useful for generating synthetic data that can be used
-for various simulation experiment purposes. In fact, it is randomness
-that facilitates an unbiased sample selection from a large dataset.
-
-We will look at random data generation with
-some specific properties:
-
-
--   Pseudorandom with no specific distribution
--   Normal distribution
--   Poisson distribution
 
 
 ### Pseudorandom numbers

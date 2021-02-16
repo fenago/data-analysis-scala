@@ -123,15 +123,9 @@ way to get random samples using Scala\'s
 built-in APIs. We will look at how to efficiently get random samples
 from large datasets in subsequent labs.
 
-The details of Scala\'s random utility can be
-found
-at [https://www.scala-lang.org/api/2.12.8/scala/util/Random\$.html](https://www.scala-lang.org/api/2.12.8/scala/util/Random%24.html).
-Some of the commonly used APIs are shown in the following table:
 
-![](images/4.PNG)
 
 #### Selecting samples using Saddle
-
 
 
 Let\'s look at a similar exercise using the

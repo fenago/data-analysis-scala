@@ -20,8 +20,8 @@ Labs for this course are available at path shared below.
 
 Path: `~/work/data-analysis-scala`
 
-1. ##### Scala Overview
-		* http://<lab-environment>/lab/workspaces/lab1_Scala
-2. ##### Data Analysis
-		* http://<lab-environment>/lab/workspaces/lab2_Data_Analysis
-
+1. Scala Overview
+2. Data Analysis
+3. Data Ingestion
+4. Data Exploration and Visualization
+5. Applying Statistics and Hypothesis Testing

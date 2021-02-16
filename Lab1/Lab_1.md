@@ -1,4 +1,6 @@
 
+<img align="right" src="../logo.png">
+
 
 Lab 1. Scala Overview
 ----------------------------------
@@ -173,8 +175,9 @@ styles of programming using Scala.
 
 
 
+#### Compile and Run
 
-#### Compile and Run using SBT
+**Method 1: Terminal**
 
 To run scala file with main function defined from the terminal, simply run the following commands. The program will the then be compiled and executed.
 
@@ -187,14 +190,21 @@ sbt "show discoveredMainClasses"
 sbt "runMain fenago.example.<update>"
 ```
 
-![](../images/scala1.png)
+![](../images/scalaj0.png)
 
 
-![](../images/scala2.png)
+![](../images/scalaj1.png)
 
 
-**Note:** Run `sbt run` instead of sbt "runMain fenago.example.`<update>`" command to choose which file to run.
+**Method 2: SBT Shell in Intellij Idea**
 
+
+![](../images/scalaj2.png)
+
+
+**Method 3: Intellij Idea**
+
+![](../images/scala-intellij.png)
 
 
 ### Object-oriented programming using Scala

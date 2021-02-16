@@ -1,4 +1,6 @@
 
+<img align="right" src="../logo.png">
+
 
 Lab 4. Data Exploration and Visualization
 ------------------------------------------------------

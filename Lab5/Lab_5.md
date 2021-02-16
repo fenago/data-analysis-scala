@@ -1,3 +1,5 @@
+<img align="right" src="../logo.png">
+
 
 
 Lab 5. Applying Statistics and Hypothesis Testing

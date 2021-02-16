@@ -1,3 +1,4 @@
+<img align="right" src="../logo.png">
 
 
 Lab 2. Data Analysis Life Cycle
@@ -16,7 +17,9 @@ The following are the topics that we will be covering in this lab:
 
 
 
-#### Compile and Run using SBT
+#### Compile and Run
+
+**Method 1: Terminal**
 
 To run scala file with main function defined from the terminal, simply run the following commands. The program will the then be compiled and executed.
 
@@ -29,7 +32,22 @@ sbt "show discoveredMainClasses"
 sbt "runMain fenago.example.<update>"
 ```
 
-![](../images/scala3.png)
+![](../images/scalaj0.png)
+
+
+![](../images/scalaj1.png)
+
+
+**Method 2: SBT Shell in Intellij Idea**
+
+
+![](../images/scalaj2.png)
+
+
+**Method 3: Intellij Idea**
+
+![](../images/scala-intellij.png)
+
 
 
 

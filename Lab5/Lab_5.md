@@ -183,7 +183,7 @@ data is sorted, we can visualize the
 percentiles, as shown in the following screenshot:
 
 
-![](./images/7bba099a-93c7-4353-9962-ea77ffca011d.png)
+![](../images/7bba099a-93c7-4353-9962-ea77ffca011d.png)
 
 
 
@@ -690,7 +690,7 @@ provides both variants of the statistical function, one
 without weights and the other one with weights:
 
 
-![](./images/5.PNG)
+![](../images/5.PNG)
 
 
 

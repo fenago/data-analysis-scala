@@ -36,7 +36,7 @@ You can access jupyter lab at `http://<lab-environment>/lab/workspaces/lab2_Data
 - Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
 - Click **File Browser** tab on the top left and open `~/work/data-analysis-scala/Lab2/src/main/scala/fenago/example` to view scala files.
 
-![](./images/scala.png)
+![](../images/scala.png)
 
 
 
@@ -57,7 +57,7 @@ sbt "show discoveredMainClasses"
 sbt "runMain fenago.example.<update>"
 ```
 
-![](./images/scala3.png)
+![](../images/scala3.png)
 
 
 

@@ -34,7 +34,7 @@ You can access jupyter lab at `http://<lab-environment>/lab/workspaces/lab1_Scal
 - Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
 - Click **File Browser** tab on the top left and open `~/work/data-analysis-scala/Lab1/src/main/scala/fenago/example` to view scala files.
 
-![](./images/scala.png)
+![](../images/scala.png)
 
 
 #### Java and SBT
@@ -213,10 +213,10 @@ sbt "show discoveredMainClasses"
 sbt "runMain fenago.example.<update>"
 ```
 
-![](./images/scala1.png)
+![](../images/scala1.png)
 
 
-![](./images/scala2.png)
+![](../images/scala2.png)
 
 
 **Note:** Run `sbt run` instead of sbt "runMain fenago.example.`<update>`" command to choose which file to run.
@@ -346,7 +346,7 @@ The following is a UML diagram with a more formal representation of the
 inheritance relationship:
 
 
-![](./images/95727c62-4440-495a-8973-dbe228e88db2.png)
+![](../images/95727c62-4440-495a-8973-dbe228e88db2.png)
 
 
  It captures the following important properties:
@@ -626,7 +626,7 @@ updatePersons: Array[Person] = Array(Person(Jon,Doe,20), Person(Alice,Smith,20),
 The following is a summary of the array operations and their associated
 performance characteristics:
 
-![](./images/1.PNG)
+![](../images/1.PNG)
  
 
 The `ArrayBuffer` is
@@ -818,7 +818,7 @@ res6: String = USD
 In Scala, there are many different types of map, each with its own set
 of characteristics. We will cover the following three:
 
-![](./images/3.PNG)
+![](../images/3.PNG)
  
 
 

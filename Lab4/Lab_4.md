@@ -388,7 +388,7 @@ libraryDependencies ++= Seq(
 This is what it will look like:
 
 
-![](./images/aeda0fb9-b1e6-483d-8dc3-6620e48fefdb.png)
+![](../images/aeda0fb9-b1e6-483d-8dc3-6620e48fefdb.png)
 
 
 Now, create a simple main Scala object to
@@ -815,7 +815,7 @@ val plot = Vegas().withDataFrame(dfTier90Plus).encodeX("Zip Code", Nom).
 Running the preceding code will produce the following screenshot:
 
 
-![](./images/25b6f7ec-3d2c-4123-bd78-9e3f7407fbfc.png)
+![](../images/25b6f7ec-3d2c-4123-bd78-9e3f7407fbfc.png)
 
 
 In the aforementioned example, we visually looked at zip codes with the
@@ -870,7 +870,7 @@ should work in a very similar fashion for Linux OS and Windows OS:
 
 
 
-![](./images/ed273653-e582-44e7-9540-714e43246287.png)
+![](../images/ed273653-e582-44e7-9540-714e43246287.png)
 
 
  
@@ -937,7 +937,7 @@ be accessed from the browser on HTTP port
 
 
 
-![](./images/1804f4b7-adce-4952-a6b4-80ff9b01c2c2.png)
+![](../images/1804f4b7-adce-4952-a6b4-80ff9b01c2c2.png)
 
 
 
@@ -957,7 +957,7 @@ Spark Notebook with some simple visuals:
 
 
 
-![](./images/6470fc9c-addb-4c25-bb2b-1660dadcb06b.png)
+![](../images/6470fc9c-addb-4c25-bb2b-1660dadcb06b.png)
 
 
  The output should be similar to the following one  on your Terminal:
@@ -980,7 +980,7 @@ Spark Notebook with some simple visuals:
 
 
 
-![](./images/5fe3b3f7-b652-4456-a4e0-ef9881f71425.png)
+![](../images/5fe3b3f7-b652-4456-a4e0-ef9881f71425.png)
 
 
 The output should be similar to the following
@@ -1007,7 +1007,7 @@ one on your Terminal:
 
 
 
-![](./images/5392383a-e15a-478d-a881-26acfd0c93f3.png)
+![](../images/5392383a-e15a-478d-a881-26acfd0c93f3.png)
 
 
 
@@ -1050,7 +1050,7 @@ CustomPlotlyChart(
 
 
 
-![](./images/6bc9e253-cf7e-4902-b6dc-d67b51441a4f.png)
+![](../images/6bc9e253-cf7e-4902-b6dc-d67b51441a4f.png)
 
 
 As illustrated previously, using the `CustomPlotlyChart` class
@@ -1085,7 +1085,7 @@ The following is a screenshot of Spark Notebook with the aforementioned
 code executed:
 
 
-![](./images/de580975-c83a-4c81-a256-a104abfcaced.png)
+![](../images/de580975-c83a-4c81-a256-a104abfcaced.png)
 
 
 This clearly illustrates that we can use Scala sequences and the Spark
@@ -1170,7 +1170,7 @@ steps as an individual cell (using the [*SHIFT*] +
 is similar to the following screenshot:
 
 
-![](./images/7c4a5041-8d89-4471-9b1d-3936cca2ec7c.png)
+![](../images/7c4a5041-8d89-4471-9b1d-3936cca2ec7c.png)
 
 
 We can see that each of the three experiments has a slightly different
@@ -1218,7 +1218,7 @@ Running the aforementioned code in Spark Notebook results in the
 following screenshot:
 
 
-![](./images/aa280bda-f144-432b-8cfe-f4660e979fee.png)
+![](../images/aa280bda-f144-432b-8cfe-f4660e979fee.png)
 
 
 We can easily change the axis from the [*x*] axis to
@@ -1236,7 +1236,7 @@ On running this code, the histogram would look like the following
 screenshot:
 
 
-![](./images/cde7b77a-4058-4a39-82da-ce02457d74e3.png)
+![](../images/cde7b77a-4058-4a39-82da-ce02457d74e3.png)
 
 
 This is the same data, now with
@@ -1279,7 +1279,7 @@ When this code is run in Spark Notebook, we will see an output similar
 to the following screenshot:
 
 
-![](./images/3e1c8858-b9fd-42d1-a960-36578eba9888.png)
+![](../images/3e1c8858-b9fd-42d1-a960-36578eba9888.png)
 
 
 Bubble charts find a significant usage when we use data to communicate a
@@ -1453,7 +1453,7 @@ val plot = Vegas().withDataFrame(dfTier90Plus).encodeX("Zip Code", Nom).
 Running the preceding code will produce the following screenshot:
 
 
-![](./images/25b6f7ec-3d2c-4123-bd78-9e3f7407fbfc.png)
+![](../images/25b6f7ec-3d2c-4123-bd78-9e3f7407fbfc.png)
 
 
 In the aforementioned example, we visually looked at zip codes with the
@@ -1508,7 +1508,7 @@ should work in a very similar fashion for Linux OS and Windows OS:
 
 
 
-![](./images/ed273653-e582-44e7-9540-714e43246287.png)
+![](../images/ed273653-e582-44e7-9540-714e43246287.png)
 
 
  
@@ -1575,7 +1575,7 @@ be accessed from the browser on HTTP port
 
 
 
-![](./images/1804f4b7-adce-4952-a6b4-80ff9b01c2c2.png)
+![](../images/1804f4b7-adce-4952-a6b4-80ff9b01c2c2.png)
 
 
 
@@ -1595,7 +1595,7 @@ Spark Notebook with some simple visuals:
 
 
 
-![](./images/6470fc9c-addb-4c25-bb2b-1660dadcb06b.png)
+![](../images/6470fc9c-addb-4c25-bb2b-1660dadcb06b.png)
 
 
  The output should be similar to the following one  on your Terminal:
@@ -1618,7 +1618,7 @@ Spark Notebook with some simple visuals:
 
 
 
-![](./images/5fe3b3f7-b652-4456-a4e0-ef9881f71425.png)
+![](../images/5fe3b3f7-b652-4456-a4e0-ef9881f71425.png)
 
 
 The output should be similar to the following
@@ -1645,7 +1645,7 @@ one on your Terminal:
 
 
 
-![](./images/5392383a-e15a-478d-a881-26acfd0c93f3.png)
+![](../images/5392383a-e15a-478d-a881-26acfd0c93f3.png)
 
 
 
@@ -1688,7 +1688,7 @@ CustomPlotlyChart(
 
 
 
-![](./images/6bc9e253-cf7e-4902-b6dc-d67b51441a4f.png)
+![](../images/6bc9e253-cf7e-4902-b6dc-d67b51441a4f.png)
 
 
 As illustrated previously, using the `CustomPlotlyChart` class
@@ -1723,7 +1723,7 @@ The following is a screenshot of Spark Notebook with the aforementioned
 code executed:
 
 
-![](./images/de580975-c83a-4c81-a256-a104abfcaced.png)
+![](../images/de580975-c83a-4c81-a256-a104abfcaced.png)
 
 
 This clearly illustrates that we can use Scala sequences and the Spark
@@ -1808,7 +1808,7 @@ steps as an individual cell (using the [*SHIFT*] +
 is similar to the following screenshot:
 
 
-![](./images/7c4a5041-8d89-4471-9b1d-3936cca2ec7c.png)
+![](../images/7c4a5041-8d89-4471-9b1d-3936cca2ec7c.png)
 
 
 We can see that each of the three experiments has a slightly different
@@ -1856,7 +1856,7 @@ Running the aforementioned code in Spark Notebook results in the
 following screenshot:
 
 
-![](./images/aa280bda-f144-432b-8cfe-f4660e979fee.png)
+![](../images/aa280bda-f144-432b-8cfe-f4660e979fee.png)
 
 
 We can easily change the axis from the [*x*] axis to
@@ -1874,7 +1874,7 @@ On running this code, the histogram would look like the following
 screenshot:
 
 
-![](./images/cde7b77a-4058-4a39-82da-ce02457d74e3.png)
+![](../images/cde7b77a-4058-4a39-82da-ce02457d74e3.png)
 
 
 This is the same data, now with
@@ -1917,7 +1917,7 @@ When this code is run in Spark Notebook, we will see an output similar
 to the following screenshot:
 
 
-![](./images/3e1c8858-b9fd-42d1-a960-36578eba9888.png)
+![](../images/3e1c8858-b9fd-42d1-a960-36578eba9888.png)
 
 
 Bubble charts find a significant usage when we use data to communicate a

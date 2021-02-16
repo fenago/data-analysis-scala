@@ -39,7 +39,7 @@ sbt "show discoveredMainClasses"
 sbt "runMain fenago.example.<update>"
 ```
 
-![](./images/scala3.png)
+![](../images/scala3.png)
 
 
 
@@ -52,7 +52,7 @@ This diagram illustrates how a
 `Data Consumer` pulls data from the [`Data Producer`]:
 
 
-![](./images/d255e78b-e3ea-4d89-b571-d60c3d4718c5.png)
+![](../images/d255e78b-e3ea-4d89-b571-d60c3d4718c5.png)
 
 
  
@@ -260,7 +260,7 @@ This diagram illustrates how a [`Data Producer`] pushes
 data to [`Data Consumer`]:
 
 
-![](./images/a7040c14-65e9-4dcd-9ea2-eef13d621fe8.png)
+![](../images/a7040c14-65e9-4dcd-9ea2-eef13d621fe8.png)
 
 
 Let\'s look at a simple and concrete example of push-based data
@@ -466,7 +466,7 @@ The following could be the data processing flow:
 The following diagram illustrates how all of this works together:
 
 
-![](./images/f1f153ea-4c90-4bc8-a32b-cc7b10084ea9.png)
+![](../images/f1f153ea-4c90-4bc8-a32b-cc7b10084ea9.png)
 
 
 

@@ -50,7 +50,7 @@ To run scala file with main function defined from the terminal, simply run the f
 ```
 cd ~/work/data-analysis-scala/Lab2
 
-rm -rf ~/work/data-analysis-scala/Lab2/src/main/scala/fenago/example/**/.ipynb_checkpoints/
+rm -rf ~/work/data-analysis-scala/Lab2/src/main/scala/fenago/example/**/.ipynb_checkpoints/           # required in JupyerLab only
 
 sbt "show discoveredMainClasses"
 
@@ -60,8 +60,6 @@ sbt "runMain fenago.example.<update>"
 ![](./images/scala3.png)
 
 
-**Note:** Run `sbt run` instead of sbt "runMain fenago.example.`<update>`" command to choose which file to run.
-
 
 ### Data formats
 
@@ -69,14 +67,6 @@ In this section, we will be looking at the three most prevalent data formats: XM
 
 
 #### XML
-
-
-
-[**Extensible Markup Language**] ([**XML**]) is a
-simple and popular data format that is commonly used for exchanging
-databetween the enterprise system (<https://www.w3.org/XML/>). Scala has
-excellent support for processing XML data
-using the `scala-xml` library.
 
 Let\'s start by adding dependencies to the
 `scala-xml` library to `build.sbt`, as shown in
@@ -553,7 +543,7 @@ Spark is a very popular distributed data-processing engine. It has
 built-in support for exploring data in many different formats. We will
 look at Spark functionality in subsequent labs. Let\'s look at
 another Scala library called
-[**Saddle**] (<http://saddle.github.io/>) and see how we can
+**Saddle** (<http://saddle.github.io/>) and see how we can
 leverage this library to work with data.
 
 This library is not yet available for Scala 2.12, so we will be using
@@ -869,10 +859,10 @@ Compiling (synthetic)/ammonite/predef/CodePredef.sc
                                                      .;'' ``;.
      .... :: :: :: ::
    ,;' .;: () ..: :: :: :: ::
-   ::. ..:,:;.,:;. . :: .::::. :: .:' :: :: `:. ::
+   ::. ..:,:;.,:;. . :: .:. :: .:' :: :: `:. ::
     '''::, :: :: :: `:: :: ;: .:: :: : : ::
   ,:'; ::; :: :: :: :: :: ::,::''. :: `:. .:' ::
-  `:,,,,;;' ,;; ,;;, ;;, ,;;, ,;;, `:,,,,:' `;..``::::''..;'
+  `:,,,,;;' ,;; ,;;, ;;, ,;;, ,;;, `:,,,,:' `;..``:''..;'
                                                        ``::,,,,::''
 
   Welcome to Smile Shell; enter 'help<RETURN>' for the list of commands.

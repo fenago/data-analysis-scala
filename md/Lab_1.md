@@ -54,7 +54,7 @@ javac 1.8.0_242
 
 
 
-The [**Scala Build Tool**] ([**SBT**]) is a
+The **Scala Build Tool** (**SBT**) is a
 command-line tool that is very popular for
 building Scala projects. It also provides a
 Scala console that can be used for exploring
@@ -206,7 +206,7 @@ To run scala file with main function defined from the terminal, simply run the f
 ```
 cd ~/work/data-analysis-scala/Lab1
 
-rm -rf ~/work/data-analysis-scala/Lab1/src/main/scala/fenago/example/.ipynb_checkpoints/
+rm -rf ~/work/data-analysis-scala/Lab1/src/main/scala/fenago/example/.ipynb_checkpoints/              # required in JupyerLab only
 
 sbt "show discoveredMainClasses"
 
@@ -352,9 +352,9 @@ inheritance relationship:
  It captures the following important properties:
 
 
-- The [**Vehicle**] is a super-class or base-class 
-- [**SportsUtilityVehicle**] is a sub-class that extends the
-    [**Vehicle**] base-class
+- The **Vehicle** is a super-class or base-class 
+- **SportsUtilityVehicle** is a sub-class that extends the
+    **Vehicle** base-class
 - This relationship can be envisioned as a parent-child relationship
 
 
@@ -796,7 +796,7 @@ The preceding code is a very simple example of finding a
 
 A Map provides a mapping from a key to the 
 associated value. Lookups into a Map based on a key have a generally
-constant time of [*O(1)*]{.emphasis}. A Map is an important data
+constant time of [*O(1)*]. A Map is an important data
 structure that has many applications in the real world.
 
 Let\'s look at some simple Map usage using Scala REPL:

@@ -787,6 +787,84 @@ working with data.
 
 
 
+#### Using the vegas-viz library for data visualization
+
+
+
+We will explore some sample dates using the
+`vegas-viz` (<https://www.vegas-viz.org/>) Scala library for
+data visualization. This is a powerful Scala library that integrates very well with Spark. We will work with
+Spark in subsequent labs.
+
+To explore this library in `sbt`, we will first set up the
+`build.sbt` file using the following code. At the time of
+writing, `vegas-viz` and Spark are only supported for Scala
+2.11.x, so we will use Scala version 2.11.12 for our exploration:
+
+```
+// We will use Scala 2.11.x because many of Scala libraries such as
+// Spark, vegas-viz are not yet supported for Scala 2.12.x
+scalaVersion := "2.11.12"
+
+libraryDependencies ++= Seq(
+  "org.vegas-viz" %% "vegas" % "0.3.11" // Vegas Visualization Library
+)
+```
+
+
+After creating the aforementioned `build.sbt`, run SBT. Once
+inside SBT, run the following console command to start Scala REPL:
+
+```
+scala> val plot = Vegas("Currency Exchange Rates").
+     | withData(
+     | Seq(
+     | Map("Currency Code" -> "USD", "Exchange Rate" -> 1.00),
+     | Map("Currency Code" -> "EUR", "Exchange Rate" -> 0.86),
+     | Map("Currency Code" -> "GBP", "Exchange Rate" -> 0.76),
+     | Map("Currency Code" -> "CHF", "Exchange Rate" -> 0.99),
+     | Map("Currency Code" -> "CAD", "Exchange Rate" -> 1.29),
+     | Map("Currency Code" -> "AUD", "Exchange Rate" -> 1.41),
+     | Map("Currency Code" -> "HKD", "Exchange Rate" -> 7.83)
+     | )
+     | ).
+     | encodeX("Currency Code", Nom).
+     | encodeY("Exchange Rate", Quant).
+     | mark(Point)
+```
+
+Done. Now, let\'s plot the following:
+
+```
+scala> plot.show
+```
+
+This will produce the following scatter plot of `Currency Code`
+versus `Exchange Rate` (USD):
+
+
+![](../images/192b2453-17b8-4cb6-a4c0-c1b262f31e28.png)
+
+
+Change the plot mark to `Bar` to output the bar chart using
+the following code:
+
+```
+val plot = Vegas("Currency Exchange Rates").
+...
+  mark(Bar) // for bar chart
+```
+
+This produces the following bar chart:
+
+
+![](../images/037659c2-0f65-4968-a592-560754b4cbb1.png)
+
+
+As we can see, by using the `vegas-viz` Scala library, we can
+easily perform data visualization using a simple set of APIs.
+
+
 
 ### Setting up Smile
 

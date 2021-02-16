@@ -15,32 +15,6 @@ The following are the topics that we will be covering in this lab:
 - Creating a data pipeline
 
 
-#### Lab Environment
-All packages have been installed. There is no requirement for any setup.
-
-**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
-
-Lab instructions and scala examples are present in `~/work/data-analysis-scala` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
-
-There should be terminal(s) opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
-
-Now, move in the directory which contains the scala source code by running following command in the terminal.
-
-`cd ~/work/data-analysis-scala/Lab2`
-
-You can access jupyter lab at `http://<lab-environment>/lab/workspaces/lab2_Data_Analysis`
-
-
-**Note:**
-- The supplied commands in the next steps MUST be run from your `~/work/data-analysis-scala/Lab2` directory. 
-- Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
-- Click **File Browser** tab on the top left and open `~/work/data-analysis-scala/Lab2/src/main/scala/fenago/example` to view scala files.
-
-![](../images/scala.png)
-
-
-
-
 
 #### Compile and Run using SBT
 
@@ -48,9 +22,7 @@ To run scala file with main function defined from the terminal, simply run the f
 
 
 ```
-cd ~/work/data-analysis-scala/Lab2
-
-rm -rf ~/work/data-analysis-scala/Lab2/src/main/scala/fenago/example/**/.ipynb_checkpoints/           # required in JupyerLab only
+cd ~/Desktop/data-analysis-scala/Lab2
 
 sbt "show discoveredMainClasses"
 

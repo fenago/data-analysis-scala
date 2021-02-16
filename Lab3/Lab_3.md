@@ -30,9 +30,7 @@ To run scala file with main function defined from the terminal, simply run the f
 
 
 ```
-cd ~/work/data-analysis-scala/Lab3
-
-rm -rf ~/work/data-analysis-scala/Lab3/src/main/scala/fenago/example/.ipynb_checkpoints/     # required in JupyerLab only
+cd ~/Desktop/data-analysis-scala/Lab3
 
 sbt "show discoveredMainClasses"
 

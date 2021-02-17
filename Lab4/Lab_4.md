@@ -917,24 +917,24 @@ Play server process ID is 3744
 SLF4J: Class path contains multiple SLF4J bindings.
 SLF4J: Found binding in 
 
-[jar:file:/Users/rajeshgupta/Downloads/spark-notebook-0.8.3-scala-2.11.8-spark-2.2.2-hadoop-2.7.3-with-hive/lib/ch.qos.logback.logback-classic-1.1.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+[jar:file:/Users/fenago/Downloads/spark-notebook-0.8.3-scala-2.11.8-spark-2.2.2-hadoop-2.7.3-with-hive/lib/ch.qos.logback.logback-classic-1.1.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 
-SLF4J: Found binding in [jar:file:/Users/rajeshgupta/Downloads/spark-notebook-0.8.3-scala-2.11.8-spark-2.2.2-hadoop-2.7.3-with-hive/lib/org.slf4j.slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/fenago/Downloads/spark-notebook-0.8.3-scala-2.11.8-spark-2.2.2-hadoop-2.7.3-with-hive/lib/org.slf4j.slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
 [info] play - Application started (Prod)
-[info] play - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+[info] play - Listening for HTTP on /0:0:0:0:0:0:0:0:9001
 ```
 
 The final line indicates that the server can
 be accessed from the browser on HTTP port
-`9000`. Let this server keep running.
+`9001`. Let this server keep running.
 
 
 6.  Verify that Spark Notebook is running correctly by visiting the
     landing page from your web browser by going
-    to <http://localhost:9000>. You should see a screenshot similar to
+    to <http://localhost:9001>. You should see a screenshot similar to
     the one that follows:
 
 
@@ -952,7 +952,7 @@ Spark Notebook with some simple visuals:
 
 
 1.  From the landing page shown previously, select **New** \|
-    **Scala \[2.11.8\] Spark \[2.2.2\] Hadoop \[2.7.3\] {Hive
+    **Scala \[2.11.8\] Spark \[2.3.0\] Hadoop \[2.7.3\] {Hive
     }** to create a Spark Notebook. Select an appropriate name
     for the notebook. The following screenshot shows the different
     prompts:
@@ -1129,8 +1129,6 @@ based on the following properties of a dataset:
 -   Maximum value
 
 
-To get a good understanding of the box plot, please refer
-to <https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/box-whisker-plots/a/box-plot-review>.
 
 Let\'s explore this with an example:
 
@@ -1465,19 +1463,11 @@ densely populated zip code mostly have similar total populations with
 an approximate population size of 80 K.
 
 
-### Spark Notebook for data visualization
-
+#### Spark Notebook for data visualization
 
 
 Spark Notebook (<http://spark-notebook.io/>) is an open source notebook
-that provides a web-based interface to perform interactive data analysis. This tool lets a user combine
-Scala code, SQL queries, Markup, and JavaScript in a collaborative
-manner to explore, analyze, and learn from
-data. We will primarily be using this tool for data visualization; however, this can also be used for many other
-purposes. There are several open source notebook solutions that are
-available today. However, what is unique are the following features of
-the tool:
-
+that provides a web-based interface to perform interactive data analysis. Spark notebook has following features:
 
 -   Scala based
 -   Excellent integration with Spark
@@ -1486,36 +1476,6 @@ the tool:
 -   Comprehensive support for data visualization
 
 
-#### Downloading and installing Spark Notebook
-
-
-
-There are multiple ways to run Spark
-Notebook. However, the most preferred way to run it is by installing it
-locally on your computer. As of this writing, the most recently
-supported Spark version is 2.2.0. This is sufficient for us to explore
-the power of Spark Notebook to visualize data
-in different forms.
-
-The following are the download and setup instructions for macOS. This
-should work in a very similar fashion for Linux OS and Windows OS:
-
-
-1.  Download the ZIP
-    file: <http://spark-notebook.io/dl/zip/0.8.3/2.11/2.2.2/2.7.3/true/true>.
-    We are downloading Spark Notebook version 0.8.3, built with Scala
-    2.11 and Spark 2.2.2. The following is a screenshot from the
-    download website (<http://spark-notebook.io/>) that you can refer
-    to:
-
-
-
-![](../images/ed273653-e582-44e7-9540-714e43246287.png)
-
-
- 
-
- 
 
 
 2.   Unzip the downloaded ZIP file in a suitable location on your
@@ -1523,66 +1483,44 @@ should work in a very similar fashion for Linux OS and Windows OS:
 
 
 ```
-$ unzip spark-notebook-0.8.3-scala-2.11.8-spark-2.2.2-hadoop-2.7.3-with-hive.zip
+cd /headless/spark-notebook && ./run-dev.sh local
 ```
 
 
-3.  At this point, you should have a directory
-    called `spark-notebook-0.8.3-scala-2.11.8-spark-2.2.2-hadoop-2.7.3-with-hive`.
-    This directory contains the Spark Notebook installation. Change to
-    the binary directory, where the start script is located:
 
-
-```
-$ cd spark-notebook-0.8.3-scala-2.11.8-spark-2.2.2-hadoop-2.7.3-with-hive/bin
-```
-
-
-4.  Start the Spark Notebook server, using the following command:
-
-
-```
-$ bash spark-notebook
-```
-
-
-5.  This will start the Spark Notebook server and you will see the
-    output on your Terminal, similar to the following one:
-
-
-```
-Play server process ID is 3744
-SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in 
-
-[jar:file:/Users/rajeshgupta/Downloads/spark-notebook-0.8.3-scala-2.11.8-spark-2.2.2-hadoop-2.7.3-with-hive/lib/ch.qos.logback.logback-classic-1.1.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-
-SLF4J: Found binding in [jar:file:/Users/rajeshgupta/Downloads/spark-notebook-0.8.3-scala-2.11.8-spark-2.2.2-hadoop-2.7.3-with-hive/lib/org.slf4j.slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-
-SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
-[info] play - Application started (Prod)
-[info] play - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
-```
+![](../images/Notebook0.PNG)
 
 The final line indicates that the server can
 be accessed from the browser on HTTP port
-`9000`. Let this server keep running.
+`9001`. Let this server keep running.
 
 
-6.  Verify that Spark Notebook is running correctly by visiting the
+3.  Verify that Spark Notebook is running correctly by visiting the
     landing page from your web browser by going
-    to <http://localhost:9000>. You should see a screenshot similar to
+    to <http://localhost:9001>. You should see a screenshot similar to
     the one that follows:
-
 
 
 ![](../images/1804f4b7-adce-4952-a6b4-80ff9b01c2c2.png)
 
 
+**Note:** It will take some time to display first time.
+
+
+
+<span style="color:red;">Import Spark Notebooks</span>
+
+All notebooks are present in `~/Desktop/data-analysis-scala/Lab4/src/main/notebook`. Import notebooks directly by clicking **click here** as shown in the screenshots below:
+
+
+
+![](../images/Notebook2.PNG)
+
+![](../images/Notebook3.PNG)
+
+
 
 #### Creating a Spark Notebook with simple visuals
-
 
 
 To begin with, we will start by creating a
@@ -1590,8 +1528,7 @@ Spark Notebook with some simple visuals:
 
 
 1.  From the landing page shown previously, select **New** \|
-    **Scala \[2.11.8\] Spark \[2.2.2\] Hadoop \[2.7.3\] {Hive
-    }** to create a Spark Notebook. Select an appropriate name
+    **Scala \[2.11.8\] Spark \[2.3.0\] Hadoop \[2.7.3\] {Hive }** to create a Spark Notebook. Select an appropriate name
     for the notebook. The following screenshot shows the different
     prompts:
 
@@ -1599,42 +1536,15 @@ Spark Notebook with some simple visuals:
 
 ![](../images/6470fc9c-addb-4c25-bb2b-1660dadcb06b.png)
 
-
- The output should be similar to the following one  on your Terminal:
-
-```
-...
-[info] application - Creating notebook at /
-[info] application - save at path /HandsScalaOnNotebook.snb with message None
-[info] application - listNotebooks at path /
-[debug] application - content: /HandsScalaOnNotebook.snb
-...
-```
-
  
-
 
 2.  You should see that `HandsOnScalaNotebook` will appear on
     the left-hand side of the screen under the **Files** tab.
     Select this notebook:
 
 
-
 ![](../images/5fe3b3f7-b652-4456-a4e0-ef9881f71425.png)
 
-
-The output should be similar to the following
-one on your Terminal:
-
-```
-...
-[info] application - getNotebook at path HandsScalaOnNotebook.snb
-[info] application - Loading notebook at path HandsScalaOnNotebook.snb
-[info] application - Calling action
-[info] application - Starting kernel/session because nothing for None and Some(HandsScalaOnNotebook.snb)
-[info] application - Loading notebook at path HandsScalaOnNotebook.snb
-...
-```
 
 
 3.  At this point, your Spark Notebook is running. The following
@@ -1644,7 +1554,6 @@ one on your Terminal:
     - **Code and Output Area**
     - **Variables and Errors Area**
     
-
 
 
 ![](../images/5392383a-e15a-478d-a881-26acfd0c93f3.png)

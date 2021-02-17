@@ -32,10 +32,7 @@ sbt "show discoveredMainClasses"
 sbt "runMain fenago.example.<update>"
 ```
 
-![](../images/scalaj0.png)
-
-
-![](../images/scalaj1.png)
+![](../images/scalaj3.png)
 
 
 **Method 2: SBT Shell in Intellij Idea**

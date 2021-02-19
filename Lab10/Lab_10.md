@@ -79,14 +79,9 @@ Start Worker and register the worker with master
 Open `http://localhost:8080/` in browser and copy the master url
 
 
-`spark://hostname:7077`
-
-
 ![](../images/start2.png)
 
 
-**Note:** You can also use **localhost** because spark master is running on the same node.
- 
 
 now start the worker and register it with master using following command
 
@@ -146,8 +141,6 @@ Your cluster on single node is ready now, you can test it using running command 
 [user@hostname ~]$ spark-shell --master spark://hostname:7077
 ```
 
-**Note:** You can also use **localhost** because spark master is running on the same node.
- 
 
 Reload the master webui. You will get one running application:
 
@@ -177,11 +170,7 @@ Now submit example application using spark-submit. Replace `spark://hostname:707
 spark-submit --class org.apache.spark.examples.SparkPi --master spark://hostname:7077  /headless/Downloads/spark-2.4.7-bin-hadoop2.7/examples/jars/spark-examples_2.11-2.4.7.jar
 ```
 
-**Note:** You can also use **localhost** as shown below because spark master is running on the same node:
 
-```
-spark-submit --class org.apache.spark.examples.SparkPi --master spark://localhost:7077  /headless/Downloads/spark-2.4.7-bin-hadoop2.7/examples/jars/spark-examples_2.11-2.4.7.jar
-```
 
 If this example execute successfully, your spark installation is fine. You can see the results in console log
 
@@ -199,8 +188,9 @@ If this example execute successfully, your spark installation is fine. You can s
 
 ![](../images/start8.png)
 
+
+**Hint:** `spark-submit --help`. Solution is available in `solution.txt` file.
+
+
 2) Run spark-submit command after removing `--master` parameter from the spark-submit command and verify that it does not appear in master or worker UI after refreshing the browser window.
-
-
-
 

@@ -25,3 +25,8 @@ Path: `~/work/data-analysis-scala`
 3. Data Ingestion
 4. Data Exploration and Visualization
 5. Applying Statistics and Hypothesis Testing
+6. Introduction to Spark for Distributed Data Analysis
+7. Traditional Machine Learning for Data Analysis
+8. Near Real-Time Data Analysis Using Streaming
+9. Working with Data at Scale
+10. Spark Administration
